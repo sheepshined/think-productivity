@@ -1,0 +1,28 @@
+# Credentials
+.env
+.env.*
+!.env.example
+
+# Large local tools and third-party binaries
+wifi_bf/
+tools/platform-tools/
+tools/platform-tools.zip
+*.apk
+*.iso
+
+# Local test and runtime artifacts
+*.log
+tools/*.png
+tools/agent/.cmd_*.json
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+node_modules/
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,6 @@
+# THINK 工具箱可选依赖
+# 工具 1-4 使用纯标准库，无需安装任何东西。
+# 如需使用工具 5（图片批量处理）和工具 6（PDF 工具），执行：
+#   pip install -r requirements.txt
+Pillow>=10.0
+pypdf>=4.0

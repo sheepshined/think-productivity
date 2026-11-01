@@ -1,0 +1,17 @@
+{
+  "name": "THINK 个人工作台",
+  "short_name": "THINK",
+  "description": "本地优先的个人效率工作台：待办、番茄钟、习惯、笔记、错题复习、面试系统",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0d1117",
+  "theme_color": "#0d1117",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

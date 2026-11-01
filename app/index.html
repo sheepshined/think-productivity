@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>THINK · 个人工作台</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bg-blob blob-1"></div>
+<div class="bg-blob blob-2"></div>
+<div class="bg-blob blob-3"></div>
+
+<div class="shell">
+  <!-- ===== 左侧边栏 ===== -->
+  <aside class="sidebar" id="sidebar">
+    <div class="side-brand">
+      <span class="brand-mark">🧠</span>
+      <span class="side-brand-text">THINK<small>个人工作台</small></span>
+    </div>
+    <nav class="side-nav" id="sideNav"><!-- 由 main.js 生成 --></nav>
+    <div class="side-foot">
+      <button id="btnPalette" class="side-palette" title="命令面板 (Ctrl+K)">⌘ 快速跳转 <kbd>Ctrl K</kbd></button>
+      <div class="side-foot-row">
+        <button id="btnTheme" class="icon-btn" title="切换主题">🌙</button>
+        <button id="btnData" class="icon-btn" title="导入 / 导出数据">⋯</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- 数据菜单 -->
+  <div id="dataMenu" class="data-menu hidden">
+    <button id="btnExport">⬇ 导出数据 (.json)</button>
+    <button id="btnImport">⬆ 导入数据 (.json)</button>
+    <button id="btnWipe" class="danger">🗑 清空全部数据</button>
+    <input type="file" id="importFile" accept=".json,application/json" hidden>
+  </div>
+
+  <!-- ===== 主内容区 ===== -->
+  <main class="content" id="content">
+    <div id="viewRoot"><!-- 当前页面由路由渲染 --></div>
+    <footer class="footer">
+      <span>THINK · 本地优先 · 所有数据仅保存在你的浏览器里</span>
+      <span id="footDate"></span>
+    </footer>
+  </main>
+</div>
+
+<!-- 命令面板 -->
+<div id="paletteMask" class="palette-mask hidden">
+  <div class="palette">
+    <input id="paletteInput" type="text" placeholder="输入命令或页面名，回车执行…">
+    <ul id="paletteList" class="palette-list"></ul>
+  </div>
+</div>
+
+<div id="toast" class="toast hidden"></div>
+
+<script src="js/store.js"></script>
+<script src="js/main.js"></script>
+<script src="js/views/overview.js"></script>
+<script src="js/views/calendar.js"></script>
+<script src="js/views/todos.js"></script>
+<script src="js/views/focus.js"></script>
+<script src="js/views/habits.js"></script>
+<script src="js/views/review.js"></script>
+<script src="js/views/notes.js"></script>
+<script src="js/views/interview.js"></script>
+<script src="js/views/countdown.js"></script>
+<script src="js/views/bookmarks.js"></script>
+<script src="js/views/stats.js"></script>
+<script src="js/views/settings.js"></script>
+<script src="js/boot.js"></script>
+</body>
+</html>
